@@ -36,4 +36,3 @@ $( document ).ready(function() {
     $("body").append($script);
     console.log( "Script - Done!" );
 });
-});
