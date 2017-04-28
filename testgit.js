@@ -1,6 +1,6 @@
 (function(){
 
-console.log("initial upload");
+console.log("second upload");
 
 // window.onload = function() {
 
