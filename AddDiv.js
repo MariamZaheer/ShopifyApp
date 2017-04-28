@@ -24,7 +24,7 @@ $( document ).ready(function() {
     console.log( "Div - ready!" );
     
     var $div = $('<div />').appendTo('body');
-    $div.attr('id', 'bd_rec_Horizontal');
+    $div.attr('id', 'bd_rec_Grid');
     $div.attr('data-template-type', 'grid');
     console.log( "Div - Done!" );
 
