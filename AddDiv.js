@@ -21,11 +21,19 @@
 
 
 $( document ).ready(function() {
-    console.log( "ready!" );
+    console.log( "Div - ready!" );
     
     var $div = $('<div />').appendTo('body');
     $div.attr('id', 'bd_rec_Horizontal');
     $div.attr('data-template-type', 'carousel');
-    
-    console.log( "Done!" );
+    console.log( "Div - Done!" );
+
+    console.log( "Script - ready!" );
+    var $script = document.createElement("script");
+    $script.type = "text/javascript";
+    $script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/example.js";
+    // Use any selector
+    $("body").append($script);
+    console.log( "Script - Done!" );
+});
 });
