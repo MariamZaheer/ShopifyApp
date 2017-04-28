@@ -25,7 +25,7 @@ $( document ).ready(function() {
     
     var $div = $('<div />').appendTo('body');
     $div.attr('id', 'bd_rec_Horizontal');
-    $div.attr('data-template-type', 'carousel');
+    $div.attr('data-template-type', 'grid');
     console.log( "Div - Done!" );
 
     console.log( "Script - ready!" );
