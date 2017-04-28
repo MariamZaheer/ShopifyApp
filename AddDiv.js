@@ -24,7 +24,7 @@ $( document ).ready(function() {
     console.log( "Div - ready!" );
     
 //     var $div = $('<div />').appendTo('body');
-    var container = $(".home-video");
+    var container = $("#home-imagebox");
     var $div = $('<div />').appendTo(container);
     $div.attr('id', 'bd_rec_Grid');
     $div.attr('data-template-type', 'carousel');
