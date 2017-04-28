@@ -1,6 +1,6 @@
 var config = {
   enableEventTracking: false,
-  // edeEndpoint: 'http://10.8.93.193:8080',
+  edeEndpoint: 'http://10.8.93.193:8080',
   logLevel: 0,
   templateConfiguration: {
     carousel: {
