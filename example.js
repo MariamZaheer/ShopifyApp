@@ -1,6 +1,6 @@
 var config = {
   enableEventTracking: false,
-  edeEndpoint: 'http://10.8.93.193:8080',
+  edeEndpoint: 'https://www-apistress3.kohlsecommerce.com',
   logLevel: 0,
   templateConfiguration: {
     carousel: {
