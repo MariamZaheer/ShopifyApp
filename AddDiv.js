@@ -21,6 +21,15 @@
 
 
 $( document ).ready(function() {
+
+	$.ajax({
+		url: "http://172.16.16.31:8080/v2/recommendation/channelRecs",
+		success: function(jsonFromCheyenne)) {
+			jsonFromCheyenne = JSON.parse(jsonFromCheyenne);
+			console.log(jsonFromCheyenne);
+		}
+	});
+
     console.log( "Div - ready!" );
     
 //     var $div = $('<div />').appendTo('body');
