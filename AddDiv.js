@@ -23,7 +23,7 @@
 $( document ).ready(function() {
 
 	$.ajax({
-		url: "http://172.16.16.31:8080/v2/recommendation/channelRecs",
+		url: "https://httpbin.org/get",
 		success: function(jsonFromCheyenne) {
 			jsonFromCheyenne = JSON.parse(jsonFromCheyenne);
 			console.log(jsonFromCheyenne);
