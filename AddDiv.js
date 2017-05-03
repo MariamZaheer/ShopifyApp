@@ -21,10 +21,27 @@
 
 
 $( document ).ready(function() {
+	
+	var text = '[ {
+    "channel": "Shopify",
+    "pageType": "Cart",
+    "placement": "Horizontal2",
+    "uiElement": "PGRpdiBpZD0iYmRfcmVjX2hvcml6b250YWwyIiBkYXRhLXRlbXBsYXRlLXR5cGU9ImNhcm91c2VsIj48L2Rpdj4="
+  },
+
+{
+    "channel": "Shopify",
+    "pageType": "Home",
+    "placement": "Grid",
+    "uiElement": "PGRpdiBpZD0iYmRfcmVjX2dyaWQiIGRhdGEtdGVtcGxhdGUtdHlwZT0iZ3JpZCI+PC9kaXY+="
+  }
+]';
 
 	$.ajax({
 		url: "https://httpbin.org/get",
 		success: function(jsonFromCheyenne) {
+			result(text);
+			console.log(text);
 // 			console.log(jsonFromCheyenne);
 		}
 	});
