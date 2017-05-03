@@ -25,7 +25,7 @@ $( document ).ready(function() {
 	$.ajax({
 		url: "https://httpbin.org/get",
 		success: function(jsonFromCheyenne) {
-			console.log(jsonFromCheyenne);
+// 			console.log(jsonFromCheyenne);
 		}
 	});
 
