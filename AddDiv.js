@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 	function result(text) {
-		alert(text.channel);
+		alert(text['channel']);
 	};
 
 	// JSON string containing the hardcoded BP configurations.
