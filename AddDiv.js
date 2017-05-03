@@ -1,7 +1,18 @@
 $( document ).ready(function() {
 
 	function result(text) {
-		alert(text['channel']);
+		// Iterate the JSON array and extract the values.
+		for(var i in text)
+		{
+			var channel = text[i].channel;
+			var pageType = text[i].pageType;
+			var placement = text[i].placement;
+			var uiElement = text[i].uiElement;
+
+			console.log(pageType);
+		}
+		
+// 		alert(text['channel']);
 	};
 
 	// JSON string containing the hardcoded BP configurations.
