@@ -31,11 +31,11 @@ $( document ).ready(function() {
 	console.log( "Div - ready!" );
 	
 	// Adding a div tag.
-	var container = $("#home-imagebox");
-	var $div = $('<div />').appendTo(container);
-	$div.attr('id', 'bd_rec_Grid');
-	$div.attr('data-template-type', 'carousel');
-	console.log( "Div - Done!" );
+// 	var container = $("#home-imagebox");
+// 	var $div = $('<div />').appendTo(container);
+// 	$div.attr('id', 'bd_rec_Grid');
+// 	$div.attr('data-template-type', 'carousel');
+// 	console.log( "Div - Done!" );
 
 	// Loading a sample recommendations js.
 	console.log( "Script - ready!" );
