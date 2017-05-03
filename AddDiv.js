@@ -25,7 +25,6 @@ $( document ).ready(function() {
 	$.ajax({
 		url: "https://httpbin.org/get",
 		success: function(jsonFromCheyenne) {
-			jsonFromCheyenne = JSON.parse(jsonFromCheyenne);
 			console.log(jsonFromCheyenne);
 		}
 	});
