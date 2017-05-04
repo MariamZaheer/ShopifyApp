@@ -15,7 +15,7 @@ var config = {
     grid: {
       // enablePriceValidation: true,
       forceStarSmall: false,
-      horizontalCount: 2,
+      horizontalCount: 4,
       showDoNotRecommend: true,
       showPercentageOff: true,
       showProductCode: true,
