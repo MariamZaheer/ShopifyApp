@@ -56,7 +56,7 @@ var config = {
   }
 };
 
-// var recommendationRenderer = new bd.RecommendationRenderer(config);
+var recommendationRenderer = new bd.RecommendationRenderer(config);
 // recommendationRenderer.setApiKey('JAAso4n7ibZpbRxsIZyo2ccVt3E7np1C')
 //   .setChannel('TCom')
 //   .setPage('PDP')
@@ -87,4 +87,4 @@ var config = {
 //   .onProductCartAddClick(function (element, data) {
 //     console.log('Product Cart Add Click:', data);
 //   })
-//   .injectCombinedRecommendations();
+  .injectCombinedRecommendations();
