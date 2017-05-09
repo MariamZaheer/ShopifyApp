@@ -87,4 +87,4 @@ recommendationRenderer.setApiKey('JAAso4n7ibZpbRxsIZyo2ccVt3E7np1C')
 //   .onProductCartAddClick(function (element, data) {
 //     console.log('Product Cart Add Click:', data);
 //   })
-  .injectCombinedRecommendations();
+  recommendationRenderer.injectCombinedRecommendations();
