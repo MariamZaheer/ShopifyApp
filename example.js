@@ -58,8 +58,8 @@ var config = {
 
 var recommendationRenderer = new bd.RecommendationRenderer(config);
 recommendationRenderer.setApiKey('JAAso4n7ibZpbRxsIZyo2ccVt3E7np1C')
-//   .setChannel('TCom')
-//   .setPage('PDP')
+  .setChannel('TCom')
+  .setPage('PDP')
 //   .setCcp('atgId', '2254000009113198')
 //   .setCcp('productNumbers', '1000064')
 //   .setCcp('rvProductNumbers', '1167424,2397792,2630235,2567107,825463,1431538,1944597,2116842,2116882,2330037,2410809,2476444,2519633,2531899,2554776,2563972,2565576,2575490,2590050,2618590,2637063')
