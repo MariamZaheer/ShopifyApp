@@ -57,7 +57,7 @@ var config = {
 };
 
 var recommendationRenderer = new bd.RecommendationRenderer(config);
-// recommendationRenderer.setApiKey('JAAso4n7ibZpbRxsIZyo2ccVt3E7np1C')
+recommendationRenderer.setApiKey('JAAso4n7ibZpbRxsIZyo2ccVt3E7np1C')
 //   .setChannel('TCom')
 //   .setPage('PDP')
 //   .setCcp('atgId', '2254000009113198')
