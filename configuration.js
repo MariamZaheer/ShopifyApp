@@ -37,11 +37,11 @@ $( document ).ready(function() {
 // 	$div.attr('data-template-type', 'carousel');
 // 	console.log( "Div - Done!" );
 
-	// Loading a sample recommendations js.
+	// Loading the basic recommendations js by default.
 	console.log( "Script - ready!" );
 	var $script = document.createElement("script");
 	$script.type = "text/javascript";
-	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/example.js";
+	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/basic.js";
 	$("body").append($script);
 	console.log( "Script - Done!" );
 });
