@@ -52,18 +52,18 @@ $( document ).ready(function() {
 	$div.attr('data-template-type', 'carousel');
 	console.log( "Div - Done!" );
 	
-	console.log( "Script - ready!" );
-	var $script = document.createElement("script");
-	$script.type = "text/javascript";
-	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/bd-experience-rendering-sdk.min.js";
-	$(".kickstarter__meta").append($script);
-	console.log( "Script - Done!" );
-	
 	// Loading the basic recommendations js by default.
 	console.log( "Script - ready!" );
 	var $script = document.createElement("script");
 	$script.type = "text/javascript";
 	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/basic.js";
+	$(".kickstarter__meta").append($script);
+	console.log( "Script - Done!" );
+	
+	console.log( "Script - ready!" );
+	var $script = document.createElement("script");
+	$script.type = "text/javascript";
+	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/bd-experience-rendering-sdk.min.js";
 	$(".kickstarter__meta").append($script);
 	console.log( "Script - Done!" );
 });
