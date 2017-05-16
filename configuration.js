@@ -49,6 +49,6 @@ $( document ).ready(function() {
 	var $script = document.createElement("script");
 	$script.type = "text/javascript";
 	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/bd-experience-rendering-sdk.min.js";
-	$("body").append($script);
+	$(".kickstarter__meta").append($script);
 	console.log( "Script - Done!" );
 });
