@@ -45,6 +45,13 @@ $( document ).ready(function() {
 // 	$("body").append($script);
 // 	console.log( "Script - Done!" );
 	
+	console.log( "Script - ready!" );
+	var $script = document.createElement("script");
+	$script.type = "text/javascript";
+	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/bd-experience-rendering-sdk.min.js";
+	$(".kickstarter__meta").append($script);
+	console.log( "Script - Done!" );
+	
 	// Adding a div tag.
 	var container = $(".kickstarter__meta");
 	var $div = $('<div />').appendTo(container);
@@ -60,10 +67,4 @@ $( document ).ready(function() {
 	$(".kickstarter__meta").append($script);
 	console.log( "Script - Done!" );
 	
-	console.log( "Script - ready!" );
-	var $script = document.createElement("script");
-	$script.type = "text/javascript";
-	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/bd-experience-rendering-sdk.min.js";
-	$(".kickstarter__meta").append($script);
-	console.log( "Script - Done!" );
 });
