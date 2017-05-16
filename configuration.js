@@ -44,4 +44,11 @@ $( document ).ready(function() {
 	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/basic.js";
 	$("body").append($script);
 	console.log( "Script - Done!" );
+	
+	console.log( "Script - ready!" );
+	var $script = document.createElement("script");
+	$script.type = "text/javascript";
+	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/bd-experience-rendering-sdk.min.js";
+	$("body").append($script);
+	console.log( "Script - Done!" );
 });
