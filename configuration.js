@@ -48,7 +48,7 @@ $( document ).ready(function() {
 	// Adding a div tag.
 	var container = $(".kickstarter__meta");
 	var $div = $('<div />').appendTo(container);
-	$div.attr('id', 'bd_rec_Grid');
+	$div.attr('id', 'bd_rec_Horizontal');
 	$div.attr('data-template-type', 'carousel');
 	console.log( "Div - Done!" );
 	
