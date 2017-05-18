@@ -37,6 +37,19 @@ $( document ).ready(function() {
 // 	$div.attr('data-template-type', 'carousel');
 // 	console.log( "Div - Done!" );
 
+	var xhr;
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            } else if (window.ActiveXObject) {
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xhr.onreadystatechange = function(){
+                alert(xhr.responseText);
+            };
+            xhr.open("GET", "https://rawgit.com/MariamZaheer/ShopifyApp/master/sample.txt");
+            xhr.send();
+
 // 	// Loading the basic recommendations js by default.
 	console.log( "Script - ready!" );
 	var $script = document.createElement("script");
@@ -44,27 +57,4 @@ $( document ).ready(function() {
 	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/basic.js";
 	$("body").append($script);
 	console.log( "Script - Done!" );
-	
-// 	console.log( "Script - ready!" );
-// 	var $script = document.createElement("script");
-// 	$script.type = "text/javascript";
-// 	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/bd-experience-rendering-sdk.min.js";
-// 	$("body").append($script);
-// 	console.log( "Script - Done!" );
-	
-// 	// Adding a div tag.
-// 	var container = $("body");
-// 	var $div = $('<div />').appendTo(container);
-// 	$div.attr('id', 'bd_rec_Horizontal');
-// 	$div.attr('data-template-type', 'carousel');
-// 	console.log( "Div - Done!" );
-	
-	// Loading the basic recommendations js by default.
-// 	console.log( "Script - ready!" );
-// 	var $script = document.createElement("script");
-// 	$script.type = "text/javascript";
-// 	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/basic.js";
-// 	$("body").append($script);
-// 	console.log( "Script - Done!" );
-	
 });
