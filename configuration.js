@@ -40,9 +40,10 @@ $( document ).ready(function() {
 	var xhr;
             if (window.XMLHttpRequest) {
                 xhr = new XMLHttpRequest();
-            } else if (window.ActiveXObject) {
-                xhr = new ActiveXObject("Microsoft.XMLHTTP");
-            }
+            } 
+	    //else if (window.ActiveXObject) {
+              //  xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            //}
 
             xhr.onreadystatechange = function(){
                 alert(xhr.responseText);
