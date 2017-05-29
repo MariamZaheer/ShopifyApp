@@ -46,7 +46,7 @@ $( document ).ready(function() {
             //}
 
             xhr.onreadystatechange = function(){
-                alert(xhr.responseText);
+//                 alert(xhr.responseText);
             };
             xhr.open("GET", "https://rawgit.com/MariamZaheer/ShopifyApp/master/sample.txt");
             xhr.send();
