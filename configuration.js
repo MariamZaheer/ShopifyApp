@@ -11,8 +11,6 @@ $( document ).ready(function() {
 
 			console.log(pageType);
 		}
-		
-// 		alert(text['channel']);
 	};
 
 	// JSON string containing the hardcoded BP configurations.
@@ -24,32 +22,24 @@ $( document ).ready(function() {
 		success: function(jsonFromCheyenne) {
 			result(text);
 			console.log(text);
-// 			console.log(jsonFromCheyenne);
 		}
 	});
 
 	console.log( "Div - ready!" );
 	
-	// Adding a div tag.
-// 	var container = $("#home-imagebox");
-// 	var $div = $('<div />').appendTo(container);
-// 	$div.attr('id', 'bd_rec_Grid');
-// 	$div.attr('data-template-type', 'carousel');
-// 	console.log( "Div - Done!" );
-
-	var xhr;
-            if (window.XMLHttpRequest) {
-                xhr = new XMLHttpRequest();
-            } 
+// 	var xhr;
+//             if (window.XMLHttpRequest) {
+//                 xhr = new XMLHttpRequest();
+//             } 
 	    //else if (window.ActiveXObject) {
               //  xhr = new ActiveXObject("Microsoft.XMLHTTP");
             //}
 
-            xhr.onreadystatechange = function(){
+//             xhr.onreadystatechange = function(){
 //                 alert(xhr.responseText);
-            };
-            xhr.open("GET", "https://rawgit.com/MariamZaheer/ShopifyApp/master/sample.txt");
-            xhr.send();
+//             };
+//             xhr.open("GET", "https://rawgit.com/MariamZaheer/ShopifyApp/master/sample.txt");
+//             xhr.send();
 
 // 	// Loading the basic recommendations js by default.
 	console.log( "Script - ready!" );
