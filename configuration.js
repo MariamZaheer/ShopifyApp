@@ -1,5 +1,7 @@
+var test = window.location.href;
 $( document ).ready(function() {
 	
+	console.log(test);
 	console.log("test");
 	console.log(request.getQueryString());
 	let params = (new URL(document.location)).searchParams;
