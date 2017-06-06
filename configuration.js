@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	
-	var query = window.location.search.substring(1);
+	var query = window.location.href;
 	console.log(query);
 	var variables = query.split("&");
 	console.log(variables);
