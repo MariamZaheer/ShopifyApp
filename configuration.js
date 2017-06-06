@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	
-	let params = (new(document.location)).searchParams;
+	let params = (new URL(document.location)).searchParams;
 	console.log(params);
 	let name = params.get("plan");
 	console.log(name);
