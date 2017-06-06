@@ -1,4 +1,37 @@
 $( document ).ready(function() {
+	
+	var query = window.location.search.substring(1);
+	var variables = query.split("&");
+	
+	var planVariables = variables[0];
+	var planType = planVariables.split("=");
+	var plan = planType[1];
+	
+	// Loading the silver recommendations js if the plan is Silver.
+	if (plan == "Silver") {
+		console.log( "Script - ready!" );
+		var $script = document.createElement("script");
+		$script.type = "text/javascript";
+		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/silver.js";
+		$("body").append($script);
+		console.log( "Script - Done!" );
+	} else if (plan == "Gold") {
+		// Loading the gold recommendations js if the plan is Gold.
+		console.log( "Script - ready!" );
+		var $script = document.createElement("script");
+		$script.type = "text/javascript";
+		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/gold.js";
+		$("body").append($script);
+		console.log( "Script - Done!" );
+	} else if (plan == "Platinum") {
+		// Loading the platinum recommendations js if the plan is Platinum.
+		console.log( "Script - ready!" );
+		var $script = document.createElement("script");
+		$script.type = "text/javascript";
+		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/platinum.js";
+		$("body").append($script);
+		console.log( "Script - Done!" );
+	}
 
 	function result(text) {
 		// Iterate the JSON array and extract the values.
@@ -40,12 +73,4 @@ $( document ).ready(function() {
 //             };
 //             xhr.open("GET", "https://rawgit.com/MariamZaheer/ShopifyApp/master/sample.txt");
 //             xhr.send();
-
-// 	// Loading the basic recommendations js by default.
-	console.log( "Script - ready!" );
-	var $script = document.createElement("script");
-	$script.type = "text/javascript";
-	$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/basic.js";
-	$("body").append($script);
-	console.log( "Script - Done!" );
 });
