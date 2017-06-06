@@ -1,6 +1,11 @@
 $( document ).ready(function() {
 	
-	var query = window.location.href;
+	let params = (new(document.location)).searchParams;
+	console.log(params);
+	let name = params.get("plan");
+	console.log(name);
+	
+	var query = window.location.search;
 	console.log(query);
 	var variables = query.split("&");
 	console.log(variables);
