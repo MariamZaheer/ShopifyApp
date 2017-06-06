@@ -5,7 +5,7 @@ $( document ).ready(function() {
 	let name = params.get("plan");
 	console.log(name);
 	
-	var query = window.location.search;
+	var query = window.location.search.slice(1);
 	console.log(query);
 	var variables = query.split("&");
 	console.log(variables);
