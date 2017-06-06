@@ -1,10 +1,14 @@
 $( document ).ready(function() {
 	
 	var query = window.location.search.substring(1);
+	console.log(query);
 	var variables = query.split("&");
+	console.log(variables);
 	
 	var planVariables = variables[0];
+	console.log(planVariables);
 	var planType = planVariables.split("=");
+	console.log(planType);
 	var plan = planType[1];
 	console.log(plan);
 	
