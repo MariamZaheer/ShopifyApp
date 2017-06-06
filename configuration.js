@@ -1,16 +1,16 @@
 $( document ).ready(function() {
 	
 	var query = window.location.search.substring(1);
-	console.log(query);
+	console.log("query" + query);
 	var variables = query.split("&");
-	console.log(variables);
+	console.log("variables" + variables);
 	
 	var planVariables = variables[0];
-	console.log(planVariables);
+	console.log("planVariables" + planVariables);
 	var planType = planVariables.split("=");
-	console.log(planType);
+	console.log("planType" + planType);
 	var plan = planType[1];
-	console.log(plan);
+	console.log("plan" + plan);
 	
 	// Loading the silver recommendations js if the plan is Silver.
 	if (plan == "Silver") {
