@@ -6,6 +6,7 @@ $( document ).ready(function() {
 	var planVariables = variables[0];
 	var planType = planVariables.split("=");
 	var plan = planType[1];
+	console.log(plan);
 	
 	// Loading the silver recommendations js if the plan is Silver.
 	if (plan == "Silver") {
