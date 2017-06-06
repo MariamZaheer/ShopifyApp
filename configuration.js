@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 	
+	console.log("test");
+	console.log(document.URL);
+	console.log(window.location.href);
 	let params = (new URL(document.location)).searchParams;
 	console.log(document.location);
 	console.log(params);
