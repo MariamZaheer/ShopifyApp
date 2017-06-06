@@ -9,28 +9,28 @@ $( document ).ready(function() {
 	
 	// Loading the silver recommendations js if the plan is Silver.
 	if (plan == "Silver") {
-		console.log( "Script - ready!" );
+		console.log( "silver - ready!" );
 		var $script = document.createElement("script");
 		$script.type = "text/javascript";
 		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/silver.js";
 		$("body").append($script);
-		console.log( "Script - Done!" );
+		console.log( "silver - Done!" );
 	} else if (plan == "Gold") {
 		// Loading the gold recommendations js if the plan is Gold.
-		console.log( "Script - ready!" );
+		console.log( "gold - ready!" );
 		var $script = document.createElement("script");
 		$script.type = "text/javascript";
 		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/gold.js";
 		$("body").append($script);
-		console.log( "Script - Done!" );
+		console.log( "gold - Done!" );
 	} else if (plan == "Platinum") {
 		// Loading the platinum recommendations js if the plan is Platinum.
-		console.log( "Script - ready!" );
+		console.log( "platinum - ready!" );
 		var $script = document.createElement("script");
 		$script.type = "text/javascript";
 		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/platinum.js";
 		$("body").append($script);
-		console.log( "Script - Done!" );
+		console.log( "platinum - Done!" );
 	}
 
 	function result(text) {
