@@ -1,7 +1,9 @@
 var test = window.location.href;
 $( document ).ready(function() {
 	
+	var queryString = $("script[src*='configuration.js']").attr('src').split('?')[1];
 	console.log(test);
+	console.log(queryString);
 	console.log("test");
 	let params = (new URL(document.location)).searchParams;
 	console.log(document.location);
