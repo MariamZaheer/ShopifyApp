@@ -15,9 +15,9 @@ $( document ).ready(function() {
 	var req = new XMLHttpRequest();
 	req.open('GET', document.location, false);
 	req.send(null);
-	var headers = req.getAllRequestHeaders().toLowerCase();
-	alert(headers);
-	console.log(headers);
+// 	var headers = req.getAllRequestHeaders().toLowerCase();
+// 	alert(headers);
+// 	console.log(headers);
 	
 	var request = new XMLHttpRequest();
 	request.open("GET", path, true);
