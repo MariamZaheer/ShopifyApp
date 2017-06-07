@@ -1,30 +1,14 @@
-var test = window.location.href;
 $( document ).ready(function() {
 	
 	var queryString = $("script[src*='configuration.js']").attr('src').split('?')[1];
-	console.log(test);
 	console.log(queryString);
-	console.log("test");
-	let params = (new URL(document.location)).searchParams;
-	console.log(document.location);
-	console.log(params);
-	let name = params.get("plan");
-	console.log(name);
-	
-	var query = window.location.search.substring(1);
-	console.log("1");
-	
-// 	var req = new XMLHttpRequest();
-	var req = new Headers();
-	var headers = req.getAll();
-	alert(headers);
-	console.log(headers);
-	
-	var variables = query.split("&");
+
+	var variables = queryString.split("&");
 	console.log(variables);
 	
 	var planVariables = variables[0];
 	console.log(planVariables);
+	
 	var planType = planVariables.split("=");
 	console.log(planType);
 	var plan = planType[1];
