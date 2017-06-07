@@ -13,11 +13,10 @@ $( document ).ready(function() {
 	console.log("1");
 	
 	var req = new XMLHttpRequest();
-	var res = req.getAllResponseHeaders();
 	console.log(res);
 	req.open('GET', document.location, false);
 	req.send(null);
-	var headers = req.getAllResponseHeaders().toLowerCase();
+	var headers = req.getAllRequestHeaders().toLowerCase();
 	alert(headers);
 	console.log(headers);
 	
