@@ -19,6 +19,12 @@ $( document ).ready(function() {
 	alert(headers);
 	console.log(headers);
 	
+	var request = new XMLHttpRequest();
+	request.open("GET", path, true);
+	request.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+	request.send(null);
+	console.log(request);
+	
 	var variables = query.split("&");
 	console.log(variables);
 	
