@@ -11,7 +11,7 @@ $( document ).ready(function() {
 	
 	var query = window.location.search.substring(1);
 	console.log("1");
-	console.log(request.url.path);
+	console.log(request.url.query);
 	var variables = query.split("&");
 	console.log(variables);
 	
