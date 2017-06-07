@@ -13,7 +13,6 @@ $( document ).ready(function() {
 	console.log("1");
 	
 	var req = new XMLHttpRequest();
-	console.log(res);
 	req.open('GET', document.location, false);
 	req.send(null);
 	var headers = req.getAllRequestHeaders().toLowerCase();
