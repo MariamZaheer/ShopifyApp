@@ -11,7 +11,8 @@ $( document ).ready(function() {
 	console.log(name);
 	
 	var query = window.location.search.slice(1);
-	console.log(window.location);
+	console.log("1");
+	console.log(window.location.search);
 	console.log(query);
 	var variables = query.split("&");
 	console.log(variables);
