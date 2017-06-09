@@ -1,29 +1,30 @@
-<!-- <html>
+<html>
 <head>
-<!-- 	<meta http-equiv="refresh" content="0; URL='https://10.8.93.189:8443/" /> -->
-<!-- </head> -->
+ 	<meta http-equiv="refresh" content="0; URL='https://10.8.93.189:8443/" /> -->
+</head> 
 
-<!-- <body onload='myFunction()'> -->
+<body onload='myFunction()'>
+
+	onload="window.open(10.8.93.189:8443/) 
+ 	<h1>Sample HTML Hosted In Server</h1> 
 	
-<!--       onload="window.open(10.8.93.189:8443/) -->
-<!-- 	<h1>Sample HTML Hosted In Server</h1> -->
-	
-<!-- 	<script>
-		function myFunction() {
-			alert("1");
-			window.open("https://10.8.93.189:8443/");
-			alert("2");
-	}
+ 	<script type='text/javascript'>
+// 		function myFunction() {
+// 			alert("1");
+// 			window.open("https://10.8.93.189:8443/");
+// 			alert("2");
+// 	}
+		
+		$(document).ready(function() {
+			$.ajax({
+// 				<!-- 		 url: 'https://10.8.93.189:8443/', -->
+				success: function(){window.open("https://10.8.93.189:8443/");},
+				async: false
+			});
+		});
+
 		
 	</script>
 
 </body>
-</html> -->
-
-$(document).ready(function() {
-	$.ajax({
-<!-- 		 url: 'https://10.8.93.189:8443/', -->
-		 success: function(){window.open(https://10.8.93.189:8443/);},
-		 async: false
-	});
-});
+</html> 
