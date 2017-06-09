@@ -7,11 +7,12 @@
 
  	<h1>Sample HTML Hosted In Server</h1> 
 	
-	<button onclick="opennewtab('http://172.16.16.31:8080/')">Click me!</button>
+	<button onclick="opennewtab()">Click me!</button>
 	
  	<script type='text/javascript'>
 		
-		function opennewtab(url) {
+		function opennewtab() {
+			var url = "http://172.16.16.31:8080/";
 		    alert();
 		    var win = window.open(url, '_blank');
 		    if (win) {
