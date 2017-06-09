@@ -10,8 +10,20 @@
 	
  	<script type='text/javascript'>
 		
-		function sync() {
-      window.location = 'http://172.16.16.31:8080/v1/ede/channel/recommendations';
+				function sync() {
+		$.ajax({
+        url: 'http://172.16.16.31:8080/v1/ede/channel/recommendations',
+        type: 'GET',
+        dataType: "json",
+        success: displayAll
+    });
+
+function displayAll(data){
+    alert(data);
+}
+		
+
+//       window.location = 'http://172.16.16.31:8080/v1/ede/channel/recommendations';
      };	
 	</script>
 
