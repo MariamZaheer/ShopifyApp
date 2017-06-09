@@ -7,16 +7,21 @@
 
  	<h1>Sample HTML Hosted In Server</h1> 
 	
+	<button onclick='opennewtab('http://172.16.16.31:8080/')'>Click me!</button>
+	
  	<script type='text/javascript'>
-
 		
-		$(document).ready(function() {
-			$.ajax({
-				success: function(){window.open("https://10.8.93.189:8443/");},
-				async: false
-			});
-		});
-
+		function opennewtab(url) {
+		    alert();
+		    var win = window.open(url, '_blank');
+		    if (win) {
+		      //Browser has allowed it to be opened
+		      win.focus();
+		    } else {
+		      //Browser has blocked it
+		      alert('Please allow popups for this website');
+		    }
+          	}
 		
 	</script>
 
