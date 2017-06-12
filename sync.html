@@ -6,25 +6,26 @@
 
  	<h1>Sample HTML Hosted In Server</h1> 
 	
-	<button onclick="displayAll()">Click Me To Sync!</button>
+	<button onclick="sync()">Click Me To Sync!</button>
 	
  	<script type='text/javascript'>
 		
-				function sync() {
-		$.ajax({
-        url: 'http://172.16.16.31:8080/v1/ede/channel/recommendations',
-        type: 'GET',
-        dataType: "json",
-        success: displayAll
-    });
-
-function displayAll(){
-    alert();
-}
+// 		function sync() {
+// 			$.ajax({
+// 				url: 'http://172.16.16.31:8080/v1/ede/channel/recommendations',
+// 				type: 'GET',
+// 				dataType: "json",
+// 				success: displayAll
+// 			});
+// 		};
+		
+		function sync(){
+			alert();
+		}
 		
 
 //       window.location = 'http://172.16.16.31:8080/v1/ede/channel/recommendations';
-     };	
+     	
 	</script>
 
 </body>
