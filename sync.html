@@ -12,16 +12,26 @@
 		
 		function sync() {
 			$.ajax({
+				dataType: 'jsonp',
+				data: 'id=test',
+				jsonp: 'jsonp_callback',
 				url: 'https://10.8.93.189:8443/v1/ede/channel/recommendations',
-				type: 'GET',
-				dataType: "json",
-				success: displayAll(data)
+				success: function () {
+					alert();
+				}
 			});
+		
+// 			$.ajax({
+// 				url: 'https://10.8.93.189:8443/v1/ede/channel/recommendations',
+// 				type: 'GET',
+// 				dataType: "json",
+// 				success: displayAll(data)
+// 			});
 		};
 		
-		function displayAll(data){
-			alert(data);
-		}
+// 		function displayAll(data){
+// 			alert(data);
+// 		}
 		
 
 //       window.location = 'http://172.16.16.31:8080/v1/ede/channel/recommendations';
