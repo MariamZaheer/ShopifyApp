@@ -12,7 +12,7 @@
 		
 		function sync() {
 			$.ajax({
-				url: 'http://anyorigin.com/go?url=https%3A//10.8.93.189%3A8443/v1/ede/channel/recommendations&callback=?',
+				url: 'https://10.8.93.189:8443/v1/ede/channel/recommendations',
 				type: 'GET',
 				dataType: "json",
 				success: displayAll(data)
