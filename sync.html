@@ -10,17 +10,17 @@
 	
  	<script type='text/javascript'>
 		
-// 		function sync() {
-// 			$.ajax({
-// 				url: 'http://172.16.16.31:8080/v1/ede/channel/recommendations',
-// 				type: 'GET',
-// 				dataType: "json",
-// 				success: displayAll
-// 			});
-// 		};
+		function sync() {
+			$.ajax({
+				url: 'http://anyorigin.com/go?url=https%3A//10.8.93.189%3A8443/v1/ede/channel/recommendations&callback=?',
+				type: 'GET',
+				dataType: "json",
+				success: displayAll(data)
+			});
+		};
 		
-		function sync(){
-			alert();
+		function displayAll(data){
+			alert(data);
 		}
 		
 
