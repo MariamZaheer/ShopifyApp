@@ -9,6 +9,9 @@
 	<button onclick="sync()">Sync With Cheyenne!</button>
 	<br>
 	<br>
+	<button onclick="getCart()">Cart Details</button>
+	<br>
+	<br>
 	
 	<div id="demo">
 	</div>
@@ -16,6 +19,33 @@
  	<script type='text/javascript'>
 		
 		function sync() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("demo").innerHTML = this.responseText;
+				}
+			};
+			
+			xhttp.open("GET", "https://10.8.93.189:8443/v1/ede/channel/recommendations", true);
+			xhttp.send();
+		}
+		
+		function getCart() {
+			
+			var queryString = window.location.href
+			console.log("sync page " + queryString);
+
+// 	var variables = queryString.split("&");
+// 	console.log(variables);
+	
+// 	var planVariables = variables[0];
+// 	console.log(planVariables);
+	
+// 	var planType = planVariables.split("=");
+// 	console.log(planType);
+// 	var plan = planType[1];
+// 	console.log(plan);
+			
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status == 200) {
