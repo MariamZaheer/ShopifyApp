@@ -3,11 +3,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			$.ajax({
-			  url: "https://prometheus-asgard.myshopify.com/cart.json",
-			  dataType: "jsonp"
+			$("button").click(function(){
+				$.ajax({
+					url: "https://prometheus-asgard.myshopify.com/cart.json",
+					dataType: "jsonp"
 			});
+			}):
 		});
+
 </script>
 </head> 
 
@@ -40,11 +43,12 @@
 		}
 		
 		function jsonCallback(json) {
+			alert();
 			console.log(json);
 		}
 		
 		function getCart() {
-			alert();
+			
 			
 // 			var queryString = $("script[src*='sync.js']").attr('src').split('?')[1];
 // 			console.log("sync page " + queryString);
