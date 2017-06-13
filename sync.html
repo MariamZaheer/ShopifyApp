@@ -1,13 +1,15 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
+	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#test").click(function(){
 				alert();
-				$.getJSON("https://api.github.com/users/jeresig?callback=?",function(json){
-  console.log(json);
+				$.getJSON("https://api.github.com/users/jeresig?callback=?".success(function(json) {
+					console.log(json);
+				})
 });
+				
 // 				$.ajax({
 // 					url: "https://prometheus-asgard.myshopify.com/cart.json",
 // 					dataType: "jsonp",
