@@ -30,6 +30,10 @@
 			xhttp.send();
 		}
 		
+		function jsonCallback(json) {
+			console.log(json);
+		}
+		
 		function getCart() {
 			alert();
 			
@@ -47,15 +51,22 @@
 // 	var plan = planType[1];
 // 	console.log(plan);
 			
-			var xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200) {
-					document.getElementById("demo").innerHTML = this.responseText;
-				}
-			};
+// 			var xhttp = new XMLHttpRequest();
+// 			xhttp.onreadystatechange = function() {
+// 				if (this.readyState == 4 && this.status == 200) {
+// 					document.getElementById("demo").innerHTML = this.responseText;
+// 				}
+// 			};
 			
-			xhttp.open("GET", "https://prometheus-asgard.myshopify.com/cart.json", true);
-			xhttp.send();
+// 			xhttp.open("GET", "https://prometheus-asgard.myshopify.com/cart.json", true);
+// 			xhttp.send();
+			
+			
+
+			$.ajax({
+			  url: "https://prometheus-asgard.myshopify.com/cart.json",
+			  dataType: "jsonp"
+			});
 		}
 	</script>
 
