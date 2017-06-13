@@ -5,11 +5,14 @@
 		$(document).ready(function() {
 			$("#test").click(function(){
 				alert();
-				$.ajax({
-					url: "https://prometheus-asgard.myshopify.com/cart.json",
-					dataType: "jsonp",
-					success: jsonCallback(json)
-				});
+				$.getJSON("https://api.github.com/users/jeresig?callback=?",function(json){
+  console.log(json);
+});
+// 				$.ajax({
+// 					url: "https://prometheus-asgard.myshopify.com/cart.json",
+// 					dataType: "jsonp",
+// 					success: jsonCallback(json)
+// 				});
 			});
 		});
 
