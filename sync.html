@@ -7,7 +7,8 @@
 				alert();
 				$.ajax({
 					url: "https://prometheus-asgard.myshopify.com/cart.json",
-					dataType: "jsonp"
+					dataType: "jsonp",
+					success: jsonCallback(json)
 				});
 			});
 		});
