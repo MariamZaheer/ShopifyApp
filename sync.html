@@ -3,7 +3,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			$("button").click(function(){
+			$("#test").click(function(){
 				$.ajax({
 					url: "https://prometheus-asgard.myshopify.com/cart.json",
 					dataType: "jsonp"
@@ -22,7 +22,7 @@
 	<button onclick="sync()">Sync With Cheyenne!</button>
 	<br>
 	<br>
-	<button>Cart Details</button>
+	<button id="test">Cart Details</button>
 	<br>
 	<br>
 	
