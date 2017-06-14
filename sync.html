@@ -116,23 +116,27 @@
 		}
 		
 		function makeCorsRequest() {
+			alert('inside makeCorsRequest');
 			// This is a sample server that supports CORS.
 			var url = 'https://prometheus-asgard.myshopify.com/cart.json';
 			
 			var xhr = createCORSRequest('GET', url);
 			if (!xhr) {
+				alert('inside xhr is not');
 				alert('CORS not supported');
 				return;
 			}
 			
 			// Response handlers.
 			xhr.onload = function() {
+				alert('inside onload');
 				var text = xhr.responseText;
 				var title = getTitle(text);
 				alert('Response from CORS request to ' + url + ': ' + title);
 			};
 			
 			xhr.onerror = function() {
+				alert('inside on error');
 				alert('Woops, there was an error making the request.');
 			};
 			
