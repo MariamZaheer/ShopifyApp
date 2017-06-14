@@ -133,6 +133,16 @@
 				return;
 			}
 			
+			xhr.onreadystatechange = function (oEvent) {
+				if (xhr.readyState === 4) {  
+					if (xhr.status === 200) { 
+						console.log(xhr.responseText) 
+					} else {
+						console.log("Error", xhr.statusText);
+					}
+				}
+			}; 
+			
 			// Response handlers.
 			xhr.onload = function() {
 				alert('inside onload');
@@ -148,12 +158,6 @@
 			
 			xhr.send();
 		}
-		
-// 		var xhr = createCORSRequest('GET', url);
-// 		if (!xhr) {
-// 			throw new Error('CORS not supported');
-// 		}
-		
 	</script>
 </body>
 </html> 
