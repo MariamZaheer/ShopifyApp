@@ -134,6 +134,7 @@
 			}
 			
 			xhr.onreadystatechange = function (oEvent) {
+				alert('inside onready');
 				if (xhr.readyState === 4) {  
 					if (xhr.status === 200) { 
 						console.log(xhr.responseText) 
