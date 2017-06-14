@@ -5,9 +5,9 @@
 		$(document).ready(function() {
 			$("#test").click(function(){
 				alert();
-				$.getJSON("https://api.github.com/users/jeresig?callback=?",success(function(json) {
+				$.getJSON("https://prometheus-asgard.myshopify.com/cart.json", function(result) {
 					console.log(json);
-				}));
+				});
 });
 				
 // 				$.ajax({
