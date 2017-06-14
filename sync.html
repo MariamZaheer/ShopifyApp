@@ -100,7 +100,9 @@
 				alert('inside with');
 				// Check if the XMLHttpRequest object has a "withCredentials" property.
 				// "withCredentials" only exists on XMLHTTPRequest2 objects.
-				    xhr.open(method, url, true);
+				xhr.open(method, url, true);
+				alert(xhr);
+				console.log(xhr);
 			} else if (typeof XDomainRequest != "undefined") {
 				alert('inside undefined');
 				// Otherwise, check if XDomainRequest.
@@ -113,8 +115,6 @@
 				xhr = null;
 			}
 			return xhr;
-			alert(xhr);
-			console.log(xhr);
 		}
 		
 		function getTitle(text) {
