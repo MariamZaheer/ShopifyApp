@@ -96,25 +96,9 @@
 		function createCORSRequest(method, url) {
 			alert('inside createCORSRequest');
 			var xhr = new XMLHttpRequest();
-			if ("withCredentials" in xhr) {
-				alert('inside with');
-				// Check if the XMLHttpRequest object has a "withCredentials" property.
-				// "withCredentials" only exists on XMLHTTPRequest2 objects.
-				xhr.open(method, url, true);
-				alert(xhr);
-				console.log(xhr);
-			} else if (typeof XDomainRequest != "undefined") {
-				alert('inside undefined');
-				// Otherwise, check if XDomainRequest.
-				// XDomainRequest only exists in IE, and is IE's way of making CORS requests.
-				xhr = new XDomainRequest();
-				xhr.open(method, url);
-		  	} else {
-				alert('inside else');
-				// Otherwise, CORS is not supported by the browser.
-				xhr = null;
-			}
-			return xhr;
+			xhr.open(method, url, true);
+			alert(xhr);
+			console.log(xhr);
 		}
 		
 		function getTitle(text) {
@@ -133,16 +117,16 @@
 				return;
 			}
 			
-			xhr.onreadystatechange = function (oEvent) {
-				alert('inside onready');
-				if (xhr.readyState === 4) {  
-					if (xhr.status === 200) { 
-						console.log(xhr.responseText) 
-					} else {
-						console.log("Error", xhr.statusText);
-					}
-				}
-			}; 
+// 			xhr.onreadystatechange = function (oEvent) {
+// 				alert('inside onready');
+// 				if (xhr.readyState === 4) {  
+// 					if (xhr.status === 200) { 
+// 						console.log(xhr.responseText) 
+// 					} else {
+// 						console.log("Error", xhr.statusText);
+// 					}
+// 				}
+// 			}; 
 			
 			// Response handlers.
 			xhr.onload = function() {
@@ -157,7 +141,7 @@
 				alert('Woops, there was an error making the request.');
 			};
 			
-			xhr.send();
+			xhr.send(null);
 		}
 	</script>
 </body>
