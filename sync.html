@@ -5,7 +5,7 @@
 		$(document).ready(function() {
 			$("#test").click(function(){
 				alert();
-				$.getJSON("https://api.github.com/users/jeresig?callback=?".success(function(json) {
+				$.getJSON("https://api.github.com/users/jeresig?callback=?",success(function(json) {
 					console.log(json);
 				}));
 });
@@ -17,6 +17,16 @@
 // 				});
 			});
 
+// 		$(document).ready(function(){
+//     $("button").click(function(){
+//         $.getJSON("demo_ajax_json.js", function(result){
+//             $.each(result, function(i, field){
+//                 $("div").append(field + " ");
+//             });
+//         });
+//     });
+// });
+		
 </script>
 	
 </head> 
