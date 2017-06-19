@@ -67,6 +67,10 @@ $( document ).ready(function() {
 
 	console.log( "Div - ready!" );
 	
+	if (top.location.pathname === '/search') {
+		alert("search page");
+	}
+	
 // 	var xhr;
 //             if (window.XMLHttpRequest) {
 //                 xhr = new XMLHttpRequest();
