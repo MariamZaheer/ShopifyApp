@@ -74,7 +74,10 @@ $( document ).ready(function() {
 		var search = queryString.split("=");
 		var searchTerm = search[1];
 		
-		alert("Search Term is : " + searchTerm);
+		if (!searchTerm) {
+			alert("Search Term is : " + searchTerm);
+		}
+		alert("haha");
 	}
 	
 // 	var xhr;
