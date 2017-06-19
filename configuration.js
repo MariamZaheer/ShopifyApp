@@ -73,6 +73,7 @@ $( document ).ready(function() {
 		var queryString = window.location.href;
 		var search = queryString.split("=");
 		var searchTerm = search[1];
+		console.log(searchTerm);
 		
 		if (!searchTerm) {
 			alert("Search Term is : " + searchTerm);
