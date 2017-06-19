@@ -75,7 +75,7 @@ $( document ).ready(function() {
 		var searchTerm = search[1];
 		console.log("search : " + searchTerm);
 		
-		if (searchTerm !== null) {
+		if (searchTerm != null) {
 			alert("Search Term is : " + searchTerm);
 		} else {
 			alert("haha");
