@@ -67,8 +67,8 @@ $( document ).ready(function() {
 
 	console.log( "Div - ready!" );
 	
+	// Search term
 	if (top.location.pathname === '/search') {
-		alert("search page");
 		
 		var queryString = window.location.href;
 		var search = queryString.split("=");
@@ -78,7 +78,7 @@ $( document ).ready(function() {
 		if (searchTerm != null) {
 			alert("Search Term is : " + searchTerm);
 		} else {
-			alert("haha");
+			alert("No Search Term");
 		}
 	}
 	
