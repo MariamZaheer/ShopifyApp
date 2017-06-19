@@ -76,8 +76,9 @@ $( document ).ready(function() {
 		
 		if (!searchTerm) {
 			alert("Search Term is : " + searchTerm);
+		} else {
+			alert("haha");
 		}
-		alert("haha");
 	}
 	
 // 	var xhr;
