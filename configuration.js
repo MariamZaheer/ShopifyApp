@@ -75,10 +75,11 @@ $( document ).ready(function() {
 		var searchTerm = search[1];
 		console.log("search : " + searchTerm);
 		
-		if (!searchTerm) {
-			alert("Search Term is : " + searchTerm);
-		} else {
+		if (searchTerm.value == '') {
 			alert("haha");
+			
+		} else {
+			alert("Search Term is : " + searchTerm);
 		}
 	}
 	
