@@ -83,7 +83,7 @@ $( document ).ready(function() {
 	}
 	
 	// Collections page
-	if (top.location.pathnama === '/collections') {
+	if (top.location.pathname === '/collections') {
 		alert("Collections");
 	}
 	
