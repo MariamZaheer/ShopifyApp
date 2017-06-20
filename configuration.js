@@ -82,6 +82,11 @@ $( document ).ready(function() {
 		}
 	}
 	
+	// Collections page
+	if (top.location.pathnama === '/collections') {
+		alert("Collections");
+	}
+	
 // 	var xhr;
 //             if (window.XMLHttpRequest) {
 //                 xhr = new XMLHttpRequest();
