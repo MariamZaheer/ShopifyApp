@@ -82,20 +82,6 @@ $( document ).ready(function() {
 		}
 	}
 	
-	// Collections page
-	if (top.location.pathname === '/collections') {
-		alert("Collections");
-		
-		getJSON('https://prometheus-asgard.myshopify.com/collections/summer-collection/products.json',
-			function(err, data) {
-				if (err != null) {
-					alert('Something went wrong: ' + err);
-				} else {
-					alert('Your query count: ' + data.query.count);
-				}
-			});
-	}
-	
 	var getJSON = function(url, callback) {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', url, true);
@@ -110,6 +96,22 @@ $( document ).ready(function() {
 		};
 		xhr.send();
 	};
+	
+	// Collections page
+	if (top.location.pathname === '/collections') {
+		alert("Collections");
+		
+		getJSON('https://prometheus-asgard.myshopify.com/collections/summer-collection/products.json',
+			function(err, data) {
+				if (err != null) {
+					alert('Something went wrong: ' + err);
+				} else {
+					alert('Your query count: ' + data.query.count);
+				}
+			});
+		
+		alert("done");
+	}
 	
 // 	var xhr;
 //             if (window.XMLHttpRequest) {
