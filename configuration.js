@@ -110,6 +110,7 @@ $( document ).ready(function() {
 					var count = Object.keys(data).length;
 					console.log("size : " + count);
 					console.log("response : " + data[0]);
+					console.log("response : " + data);
 				}
 			});
 		
