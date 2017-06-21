@@ -79,6 +79,7 @@ $( document ).ready(function() {
 				var count = Object.keys(response).length;
 				console.log("size : " + count);
 				console.log("response : " + response[0]);
+				console.log("response : " + response);
 			} else {
 				callback(status);
 			}
