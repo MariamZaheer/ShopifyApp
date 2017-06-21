@@ -89,8 +89,9 @@ $( document ).ready(function() {
 		xhr.onload = function() {
 			var status = xhr.status;
 			if (status == 200) {
-				console.log(xhr);
-				console.log(xhr.response);
+				var response = xhr.response;
+				console.log(response);
+				alert(response);
 				callback(null, xhr.response);
 			} else {
 				callback(status);
@@ -108,7 +109,8 @@ $( document ).ready(function() {
 				if (err != null) {
 					alert('Something went wrong: ' + err);
 				} else {
-					alert('Your query count: ' + data.query.count);
+					alert("something");
+// 					alert('Your query count: ' + data.query.count);
 				}
 			});
 		
