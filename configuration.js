@@ -89,6 +89,8 @@ $( document ).ready(function() {
 		xhr.onload = function() {
 			var status = xhr.status;
 			if (status == 200) {
+				console.log(xhr);
+				console.log(xhr.response);
 				callback(null, xhr.response);
 			} else {
 				callback(status);
