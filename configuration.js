@@ -1,43 +1,32 @@
 $( document ).ready(function() {
 	
 	var queryString = $("script[src*='configuration.js']").attr('src').split('?')[1];
-	console.log(queryString);
 
 	var variables = queryString.split("&");
-	console.log(variables);
 	
 	var planVariables = variables[0];
-	console.log(planVariables);
 	
 	var planType = planVariables.split("=");
-	console.log(planType);
 	var plan = planType[1];
-	console.log(plan);
 	
 	// Loading the silver recommendations js if the plan is Silver.
 	if (plan == "Silver") {
-		console.log( "silver - ready!" );
 		var $script = document.createElement("script");
 		$script.type = "text/javascript";
 		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/silver.js";
 		$("body").append($script);
-		console.log( "silver - Done!" );
 	} else if (plan == "Gold") {
 		// Loading the gold recommendations js if the plan is Gold.
-		console.log( "gold - ready!" );
 		var $script = document.createElement("script");
 		$script.type = "text/javascript";
 		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/gold.js";
 		$("body").append($script);
-		console.log( "gold - Done!" );
 	} else if (plan == "Platinum") {
 		// Loading the platinum recommendations js if the plan is Platinum.
-		console.log( "platinum - ready!" );
 		var $script = document.createElement("script");
 		$script.type = "text/javascript";
 		$script.src = "https://rawgit.com/MariamZaheer/ShopifyApp/master/platinum.js";
 		$("body").append($script);
-		console.log( "platinum - Done!" );
 	}
 
 	function result(text) {
@@ -48,8 +37,6 @@ $( document ).ready(function() {
 			var pageType = text[i].pageType;
 			var placement = text[i].placement;
 			var uiElement = text[i].uiElement;
-
-			console.log(pageType);
 		}
 	};
 
@@ -61,11 +48,8 @@ $( document ).ready(function() {
 		url: "https://httpbin.org/get",
 		success: function(jsonFromCheyenne) {
 			result(text);
-			console.log(text);
 		}
 	});
-
-	console.log( "Div - ready!" );
 	
 	// Search term
 	if (top.location.pathname === '/search') {
