@@ -109,7 +109,7 @@ $( document ).ready(function() {
 				} else {
 					var count = Object.keys(data).length;
 					console.log("size : " + count);
-					console.log("response : " + response);
+					console.log("response : " + data);
 				}
 			});
 		
