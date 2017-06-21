@@ -90,7 +90,11 @@ $( document ).ready(function() {
 			var status = xhr.status;
 			if (status == 200) {
 				var response = xhr.response;
-				callback(null, xhr.response);
+				callback(null, response);
+				
+				var count = Object.keys(response).length;
+				console.log("size : " + count);
+				console.log("response : " + response[0]);
 			} else {
 				callback(status);
 			}
@@ -108,9 +112,8 @@ $( document ).ready(function() {
 					alert('Something went wrong: ' + err);
 				} else {
 					var count = Object.keys(data).length;
-					console.log("size : " + count);
-					console.log("response : " + data[0]);
-					console.log("response : " + data);
+// 					console.log("size : " + count);
+// 					console.log("response : " + data[0]);
 				}
 			});
 		
