@@ -109,6 +109,8 @@ $( document ).ready(function() {
 				if (err != null) {
 					alert('Something went wrong: ' + err);
 				} else {
+					var count = Object.keys(data).length;
+					alert("size : " + count);
 					alert("data : " + data);
 					alert("data query : " + data.query);
 // 					alert('Your query count: ' + data.query.count);
