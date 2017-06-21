@@ -90,8 +90,6 @@ $( document ).ready(function() {
 			var status = xhr.status;
 			if (status == 200) {
 				var response = xhr.response;
-				console.log(response);
-				alert(response);
 				callback(null, xhr.response);
 			} else {
 				callback(status);
@@ -111,9 +109,7 @@ $( document ).ready(function() {
 				} else {
 					var count = Object.keys(data).length;
 					alert("size : " + count);
-					alert("data : " + data);
-					alert("data query : " + data.query);
-// 					alert('Your query count: ' + data.query.count);
+					console.log("response : " + response);
 				}
 			});
 		
