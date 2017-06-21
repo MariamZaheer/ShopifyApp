@@ -108,7 +108,7 @@ $( document ).ready(function() {
 					alert('Something went wrong: ' + err);
 				} else {
 					var count = Object.keys(data).length;
-					alert("size : " + count);
+					console.log("size : " + count);
 					console.log("response : " + response);
 				}
 			});
