@@ -78,7 +78,6 @@ $( document ).ready(function() {
 				
 				var count = Object.keys(response).length;
 				console.log("size : " + count);
-				console.log("response : " + response[0]);
 				console.log("response : " + response);
 			} else {
 				callback(status);
@@ -98,7 +97,7 @@ $( document ).ready(function() {
 				} else {
 					var count = Object.keys(data).length;
 // 					console.log("size : " + count);
-// 					console.log("response : " + data[0]);
+					console.log("response : " + data);
 				}
 			});
 		
