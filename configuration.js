@@ -85,7 +85,31 @@ $( document ).ready(function() {
 	// Collections page
 	if (top.location.pathname === '/collections') {
 		alert("Collections");
+		
+		getJSON('https://prometheus-asgard.myshopify.com/collections/summer-collection/products.json',
+			function(err, data) {
+				if (err != null) {
+					alert('Something went wrong: ' + err);
+				} else {
+					alert('Your query count: ' + data.query.count);
+				}
+			});
 	}
+	
+	var getJSON = function(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', url, true);
+		xhr.responseType = 'json';
+		xhr.onload = function() {
+			var status = xhr.status;
+			if (status == 200) {
+				callback(null, xhr.response);
+			} else {
+				callback(status);
+			}
+		};
+		xhr.send();
+	};
 	
 // 	var xhr;
 //             if (window.XMLHttpRequest) {
