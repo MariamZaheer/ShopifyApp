@@ -78,10 +78,12 @@ $( document ).ready(function() {
 				
 				var key = Object.keys(response);
 				console.log("Key : " + key);
+				
 				var length = key.length;
 				console.log("Length : " + length);
-				var products = Object.keys(response.products.length);
-				console.log("products : " + products);
+				
+				var collectionLength = Object.keys(data.collections[i]).length
+				console.log("Length of the collection : " + collectionLength);
 			} else {
 				callback(status);
 			}
