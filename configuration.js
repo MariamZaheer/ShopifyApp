@@ -79,13 +79,10 @@ $( document ).ready(function() {
 				var key = Object.keys(response);
 				console.log("Key : " + key);
 				
-				var length = key.length;
-				console.log("Length : " + length);
-				
 				var collectionLength = Object.keys(response.collections).length;
 				console.log("Length of the collection : " + collectionLength);
 				
-				var data = response.collections;
+				var data = response.key;
 				for (var i in data) {
 					var id = data[i].title;
 					console.log("Title : " + id);
