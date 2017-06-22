@@ -66,6 +66,36 @@ $( document ).ready(function() {
 		}
 	}
 	
+	var getCollection = function(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', url, true);
+		xhr.responseType = 'json';
+		xhr.onload = function() {
+			var status = xhr.status;
+			if (status == 200) {
+				var response = xhr.response;
+				callback(null, response);
+				
+// 				var key = Object.keys(response);
+// 				console.log("Key : " + key);
+				
+// 				var collectionLength = Object.keys(response.collections).length;
+// 				console.log("Length of the collection : " + collectionLength);
+				
+// 				var data = response.collection;
+// 				for (var i in data) {
+// 					var id = data[i].title;
+// 					console.log("Title : " + id);
+// 				}
+				
+// 				var response = Object.values(response);
+// 				console.log("Response : " + response);
+			} else {
+				callback(status);
+			}
+		};
+		xhr.send();
+	
 	var getJSON = function(url, callback) {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', url, true);
@@ -84,7 +114,18 @@ $( document ).ready(function() {
 				
 				var data = response.collection;
 				for (var i in data) {
-					var id = data[i].title;
+					var title = data[i].title;
+					
+					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
+					
+					getJSON(url, function(err, data) {
+							if (err != null) {
+								alert('Something went wrong 2 : ' + err);
+							} else {
+								var count = Object.keys(data).length;
+							}
+					});
+					
 					console.log("Title : " + id);
 				}
 				
