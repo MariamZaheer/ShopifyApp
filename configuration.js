@@ -102,9 +102,6 @@ $( document ).ready(function() {
 					var count = Object.keys(data).length;
 // 					console.log("size : " + count);
 					console.log("response 2 : " + data);
-					
-					var products = Object.keys(data.products[i]).length;
-					console.log("products 2 : " + products);
 				}
 			});
 		
