@@ -76,8 +76,10 @@ $( document ).ready(function() {
 				var response = xhr.response;
 				callback(null, response);
 				
-				var count = Object.keys(response);
-				console.log("size : " + count);
+				var key = Object.keys(response);
+				console.log("Key : " + key);
+				var length = key.length;
+				console.log("Length : " + length);
 				console.log("response 1 : " + response);
 			} else {
 				callback(status);
