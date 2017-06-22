@@ -85,7 +85,7 @@ $( document ).ready(function() {
 				var collectionLength = Object.keys(response.collections).length;
 				console.log("Length of the collection : " + collectionLength);
 				
-				var response = Object.values(response.collections);
+				var response = Object.values(response);
 				console.log("Response : " + response);
 			} else {
 				callback(status);
