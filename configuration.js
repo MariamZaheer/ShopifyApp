@@ -80,7 +80,7 @@ $( document ).ready(function() {
 				console.log("Key : " + key);
 				var length = key.length;
 				console.log("Length : " + length);
-				var products = Object.keys(response.products[i]).length;
+				var products = Object.keys(response.products.length);
 				console.log("products : " + products);
 				console.log("response 1 : " + response);
 			} else {
