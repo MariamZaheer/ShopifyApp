@@ -76,7 +76,7 @@ $( document ).ready(function() {
 				var response = xhr.response;
 				callback(null, response);
 				
-				var count = Object.keys(response).length;
+				var count = Object.keys(response);
 				console.log("size : " + count);
 				console.log("response 1 : " + response);
 			} else {
