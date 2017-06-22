@@ -82,7 +82,7 @@ $( document ).ready(function() {
 				var length = key.length;
 				console.log("Length : " + length);
 				
-				var collectionLength = Object.keys(response.collections[i]).length
+				var collectionLength = Object.keys(response.collections)
 				console.log("Length of the collection : " + collectionLength);
 			} else {
 				callback(status);
