@@ -82,7 +82,6 @@ $( document ).ready(function() {
 				console.log("Length : " + length);
 				var products = Object.keys(response.products.length);
 				console.log("products : " + products);
-				console.log("response 1 : " + response);
 			} else {
 				callback(status);
 			}
@@ -94,14 +93,12 @@ $( document ).ready(function() {
 	if (top.location.pathname === '/collections') {
 		alert("Collections");
 		
-		getJSON('https://prometheus-asgard.myshopify.com/collections/summer-collection/products.json',
+		getJSON('https://prometheus-asgard.myshopify.com/collections.json',
 			function(err, data) {
 				if (err != null) {
 					alert('Something went wrong: ' + err);
 				} else {
 					var count = Object.keys(data).length;
-// 					console.log("size : " + count);
-					console.log("response 2 : " + data);
 				}
 			});
 		
