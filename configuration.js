@@ -82,7 +82,7 @@ $( document ).ready(function() {
 				var collectionLength = Object.keys(response.collections).length;
 				console.log("Length of the collection : " + collectionLength);
 				
-				var data = response.key;
+				var data = response.collection;
 				for (var i in data) {
 					var id = data[i].title;
 					console.log("Title : " + id);
