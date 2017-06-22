@@ -80,6 +80,8 @@ $( document ).ready(function() {
 				console.log("Key : " + key);
 				var length = key.length;
 				console.log("Length : " + length);
+				var products = Object.keys(data.products[i]).length;
+				console.log("products : " + products);
 				console.log("response 1 : " + response);
 			} else {
 				callback(status);
