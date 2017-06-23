@@ -115,12 +115,10 @@ $( document ).ready(function() {
 				console.log("Length of the collection : " + collectionLength);
 				
 				var data = response.collections;
-				console.log("Data : " + data);
+
 				for (var i in data) {
-					console.log("inside Data");
-					var title = data[i].title;
-					console.log("after title");
-					
+
+					var title = data[i].title;					
 					console.log("Title : " + title);
 					
 // 					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
