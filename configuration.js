@@ -121,7 +121,7 @@ $( document ).ready(function() {
 
 				for (var i in data) {
 
-					var all = data[i];					
+					var all = data;					
 					console.log("All : " + all);
 					
 					var title = data[i].title;					
