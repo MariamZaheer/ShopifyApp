@@ -114,7 +114,7 @@ $( document ).ready(function() {
 				var collectionLength = Object.keys(response.collections).length;
 				console.log("Length of the collection : " + collectionLength);
 				
-				var data = response.collection;
+				var data = response.collections;
 				console.log("Data : " + data);
 				for (var i in data) {
 					console.log("inside Data");
