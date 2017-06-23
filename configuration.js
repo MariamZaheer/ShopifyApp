@@ -121,7 +121,10 @@ $( document ).ready(function() {
 					var title = data[i].title;					
 					console.log("Title : " + title);
 					
-					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
+					var handle = data[i].handle;					
+					console.log("Handle : " + handle);
+					
+					var url = "https://prometheus-asgard.myshopify.com/collections/" + handle + "/products.json";
 					console.log("URl : " + url);
 					
 // 					getJSON(url, function(err, data) {
