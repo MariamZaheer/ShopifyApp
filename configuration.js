@@ -133,7 +133,7 @@ $( document ).ready(function() {
 				}
 				
 				var response = Object.values(response);
-				console.log("Response : " + response);
+// 				console.log("Response : " + response);
 			} else {
 				callback(status);
 			}
