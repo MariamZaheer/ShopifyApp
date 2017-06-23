@@ -123,13 +123,13 @@ $( document ).ready(function() {
 					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
 					console.log("URl : " + url);
 					
-					getJSON(url, function(err, data) {
-							if (err != null) {
-								alert('Something went wrong 2 : ' + err);
-							} else {
-								var count = Object.keys(data).length;
-							}
-					});
+// 					getJSON(url, function(err, data) {
+// 							if (err != null) {
+// 								alert('Something went wrong 2 : ' + err);
+// 							} else {
+// 								var count = Object.keys(data).length;
+// 							}
+// 					});
 				}
 				
 				var response = Object.values(response);
