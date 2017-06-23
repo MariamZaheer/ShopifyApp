@@ -120,9 +120,6 @@ $( document ).ready(function() {
 				var data = response.collections;
 
 				for (var i in data) {
-
-					var all = data;					
-					console.log("All : " + all);
 					
 					var title = data[i].title;					
 					console.log("Title : " + title);
@@ -154,6 +151,7 @@ $( document ).ready(function() {
 	
 	// Collections page
 	if (top.location.pathname === '/collections') {
+		window.alert(this.href.substr(this.href.lastIndexOf('/') + 1));
 		alert("Collections");
 		
 		getJSON('https://prometheus-asgard.myshopify.com/collections.json',
