@@ -115,7 +115,7 @@ $( document ).ready(function() {
 				console.log("Length of the collection : " + collectionLength);
 				
 				var data = response.collection;
-				console.log("Data");
+				console.log("Data : " + data);
 				for (var i in data) {
 					console.log("inside Data");
 					var title = data[i].title;
