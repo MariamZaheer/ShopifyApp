@@ -152,7 +152,7 @@ $( document ).ready(function() {
 			});
 		
 		alert("done");
-	}
+	
 	
 // 	var xhr;
 //             if (window.XMLHttpRequest) {
