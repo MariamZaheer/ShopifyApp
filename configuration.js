@@ -118,7 +118,10 @@ $( document ).ready(function() {
 				for (var i in data) {
 					var title = data[i].title;
 					
+					console.log("Title : " + id);
+					
 					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
+					console.log("URl : " + url);
 					
 					getJSON(url, function(err, data) {
 							if (err != null) {
@@ -127,8 +130,6 @@ $( document ).ready(function() {
 								var count = Object.keys(data).length;
 							}
 					});
-					
-					console.log("Title : " + id);
 				}
 				
 				var response = Object.values(response);
