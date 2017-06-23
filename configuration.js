@@ -79,7 +79,7 @@ $( document ).ready(function() {
 				var key = Object.keys(response);
 				console.log("Key for a specific collection : " + key);
 				
-				var collectionLength = Object.keys(response.collections).length;
+				var collectionLength = Object.keys(response.products).length;
 				console.log("Length of each collection : " + collectionLength);
 				
 				var data = response.products;
