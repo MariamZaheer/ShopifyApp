@@ -163,5 +163,21 @@ $( document ).ready(function() {
 			});
 		
 		alert("done");
-	}	
+	}
+	
+	// Product page
+	if (top.location.pathname === '/products/') {
+		alert("Product");
+		
+// 		getJSON('https://prometheus-asgard.myshopify.com/collections.json',
+// 			function(err, data) {
+// 				if (err != null) {
+// 					alert('Something went wrong: ' + err);
+// 				} else {
+// 					var count = Object.keys(data).length;
+// 				}
+// 			});
+		
+// 		alert("done");
+	}
 });
