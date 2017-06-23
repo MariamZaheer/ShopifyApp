@@ -88,8 +88,8 @@ $( document ).ready(function() {
 // 					console.log("Title : " + id);
 // 				}
 				
-// 				var response = Object.values(response);
-// 				console.log("Response : " + response);
+				var response = Object.values(response);
+				console.log("Response : " + response);
 			} else {
 				callback(status);
 			}
