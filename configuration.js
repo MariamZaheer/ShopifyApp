@@ -121,7 +121,7 @@ $( document ).ready(function() {
 					var title = data[i].title;
 					console.log("after title");
 					
-					console.log("Title : " + id);
+					console.log("Title : " + title);
 					
 // 					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
 // 					console.log("URl : " + url);
