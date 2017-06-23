@@ -152,7 +152,7 @@ $( document ).ready(function() {
 			});
 		
 		alert("done");
-	
+	}
 	
 // 	var xhr;
 //             if (window.XMLHttpRequest) {
@@ -167,4 +167,4 @@ $( document ).ready(function() {
 //             };
 //             xhr.open("GET", "https://rawgit.com/MariamZaheer/ShopifyApp/master/sample.txt");
 //             xhr.send();
-});
+);
