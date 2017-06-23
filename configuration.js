@@ -121,8 +121,8 @@ $( document ).ready(function() {
 					var title = data[i].title;					
 					console.log("Title : " + title);
 					
-// 					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
-// 					console.log("URl : " + url);
+					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
+					console.log("URl : " + url);
 					
 // 					getJSON(url, function(err, data) {
 // 							if (err != null) {
