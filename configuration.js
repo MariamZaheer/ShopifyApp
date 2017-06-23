@@ -115,8 +115,11 @@ $( document ).ready(function() {
 				console.log("Length of the collection : " + collectionLength);
 				
 				var data = response.collection;
+				console.log("Data");
 				for (var i in data) {
+					console.log("inside Data");
 					var title = data[i].title;
+					console.log("after title");
 					
 					console.log("Title : " + id);
 					
@@ -155,19 +158,5 @@ $( document ).ready(function() {
 			});
 		
 		alert("done");
-	}
-	
-// 	var xhr;
-//             if (window.XMLHttpRequest) {
-//                 xhr = new XMLHttpRequest();
-//             } 
-	    //else if (window.ActiveXObject) {
-              //  xhr = new ActiveXObject("Microsoft.XMLHTTP");
-            //}
-
-//             xhr.onreadystatechange = function(){
-//                 alert(xhr.responseText);
-//             };
-//             xhr.open("GET", "https://rawgit.com/MariamZaheer/ShopifyApp/master/sample.txt");
-//             xhr.send();
-	});
+	}	
+});
