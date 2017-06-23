@@ -76,20 +76,23 @@ $( document ).ready(function() {
 				var response = xhr.response;
 				callback(null, response);
 				
-// 				var key = Object.keys(response);
-// 				console.log("Key : " + key);
+				var key = Object.keys(response);
+				console.log("Key for a specific collection : " + key);
 				
-// 				var collectionLength = Object.keys(response.collections).length;
-// 				console.log("Length of the collection : " + collectionLength);
+				var collectionLength = Object.keys(response.collections).length;
+				console.log("Length of each collection : " + collectionLength);
 				
-// 				var data = response.collection;
-// 				for (var i in data) {
-// 					var id = data[i].title;
-// 					console.log("Title : " + id);
-// 				}
-				
-				var response = Object.values(response);
-				console.log("Response : " + response);
+				var data = response.products;
+				for (var i in data) {
+					
+					var title = data[i].title;
+					console.log("Product Title : " + title);
+					
+					var id = data[i].id;
+					console.log("Product Id : " + id);
+					
+					console.log("##########");
+				}
 			} else {
 				callback(status);
 			}
@@ -109,7 +112,7 @@ $( document ).ready(function() {
 				callback(null, response);
 				
 				var key = Object.keys(response);
-				console.log("Key : " + key);
+				console.log("Key for all collections : " + key);
 				
 				var collectionLength = Object.keys(response.collections).length;
 				console.log("Length of the collection : " + collectionLength);
@@ -127,15 +130,15 @@ $( document ).ready(function() {
 					var url = "https://prometheus-asgard.myshopify.com/collections/" + handle + "/products.json";
 					console.log("URl : " + url);
 					
-					console.log("======================================");
-					
-					getJSON(url, function(err, data) {
+					getCollection(url, function(err, data) {
 							if (err != null) {
 								alert('Something went wrong 2 : ' + err);
 							} else {
 								var count = Object.keys(data).length;
 							}
 					});
+					
+					console.log("======================================");
 				}
 				
 				var response = Object.values(response);
