@@ -120,8 +120,8 @@ $( document ).ready(function() {
 					
 					console.log("Title : " + id);
 					
-					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
-					console.log("URl : " + url);
+// 					var url = "https://prometheus-asgard.myshopify.com/collections/" + title + "/products.json";
+// 					console.log("URl : " + url);
 					
 // 					getJSON(url, function(err, data) {
 // 							if (err != null) {
