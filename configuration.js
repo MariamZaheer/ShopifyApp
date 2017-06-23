@@ -166,7 +166,7 @@ $( document ).ready(function() {
 	}
 	
 	// Product page
-	if (top.location.pathname === '/products/') {
+	if (top.location.pathname === '/products') {
 		alert("Product");
 		
 // 		getJSON('https://prometheus-asgard.myshopify.com/collections.json',
