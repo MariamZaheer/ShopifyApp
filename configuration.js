@@ -175,9 +175,9 @@ $( document ).ready(function() {
 	var size = part.length;
 	console.log("size : " + size);
 	
-	if (part.length === 5) {
-		alert("yeah");
-	}
+// 	if (part.length === 5) {
+// 		alert("yeah");
+// 	}
 	
 	// Product page
 	if (top.location.href.indexOf("products") > -1) {
