@@ -149,11 +149,15 @@ $( document ).ready(function() {
 		xhr.send();
 	};
 	
+	var currentURL; 
+	
 	// Collections page
 	if (top.location.pathname === '/collections') {
-		var currentURL = (document.URL);
-		var part = currentURL.split("/")[3];
-		console.log("Collections : " + part);
+		currentURL = (document.URL);
+		var part = currentURL.split("/");
+		console.log("Current Page 1: " + part);
+		var currentPage = part[3];
+		console.log("Current Page : " + currentPage);
 		alert("Collections");
 		
 		getJSON('https://prometheus-asgard.myshopify.com/collections.json',
@@ -167,6 +171,8 @@ $( document ).ready(function() {
 		
 		alert("done");
 	}
+	
+// 	if (currentUR)
 	
 	// Product page
 	if (top.location.href.indexOf("products") > -1) {
