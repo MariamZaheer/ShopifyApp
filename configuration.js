@@ -172,9 +172,12 @@ $( document ).ready(function() {
 		alert("done");
 	}
 	
-	if (part.length === 4) {
-		alert("oh yeah");
-	}
+	var size = part.length;
+	console.log("size : " + size);
+	
+// 	if (part.length === 4) {
+// 		alert("oh yeah");
+// 	}
 	
 	// Product page
 	if (top.location.href.indexOf("products") > -1) {
