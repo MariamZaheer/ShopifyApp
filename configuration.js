@@ -151,7 +151,8 @@ $( document ).ready(function() {
 	
 	// Collections page
 	if (top.location.pathname === '/collections') {
-		window.alert(this.href.substr(this.href.lastIndexOf('/') + 1));
+		var currentURL = (document.URL);
+		console.log("Collections : " + currentURL);
 		alert("Collections");
 		
 		getJSON('https://prometheus-asgard.myshopify.com/collections.json',
