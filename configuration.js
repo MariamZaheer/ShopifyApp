@@ -149,12 +149,12 @@ $( document ).ready(function() {
 		xhr.send();
 	};
 	
-	var currentURL; 
+	var part;
 	
 	// Collections page
 	if (top.location.pathname === '/collections') {
 		currentURL = (document.URL);
-		var part = currentURL.split("/");
+		part = currentURL.split("/");
 		console.log("Current Page 1: " + part);
 		var currentPage = part[3];
 		console.log("Current Page : " + currentPage);
@@ -172,7 +172,9 @@ $( document ).ready(function() {
 		alert("done");
 	}
 	
-// 	if (currentUR)
+	if (part[4].isNotEmpty) {
+		alert("oh yeah");
+	}
 	
 	// Product page
 	if (top.location.href.indexOf("products") > -1) {
