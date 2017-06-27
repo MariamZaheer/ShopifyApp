@@ -172,7 +172,7 @@ $( document ).ready(function() {
 		alert("done");
 	}
 	
-	if (part[4].isNotEmpty) {
+	if (part.length === 4) {
 		alert("oh yeah");
 	}
 	
