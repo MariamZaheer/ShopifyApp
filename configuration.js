@@ -171,7 +171,7 @@ $( document ).ready(function() {
 		
 		alert("done");
 		
-		if ((top.location.pathname === '/collections/')) {
+		if (window.location.href.indexOf("/collections/") != -1) {
 			console.log("sample");
 			var size = part.length;
 			console.log("size : " + size);
