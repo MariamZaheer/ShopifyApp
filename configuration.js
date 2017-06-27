@@ -171,6 +171,7 @@ $( document ).ready(function() {
 		
 		alert("done");
 		
+		console.log("size : ");
 		var size = part.length;
 		console.log("size : " + size);
 	}
