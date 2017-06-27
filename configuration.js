@@ -170,13 +170,13 @@ $( document ).ready(function() {
 			});
 		
 		alert("done");
-		
-		if (top.location.pathname === '/collections/') {
-			console.log("sample");
-			var size = part.length;
-			console.log("size : " + size);
-		}
 	}
+	
+	if (top.location.pathname === '/collections/') {
+		console.log("sample");
+		var size = part.length;
+		console.log("size : " + size);
+}
 	
 // 	if (part.length === 5) {
 // 		alert("yeah");
