@@ -152,7 +152,7 @@ $( document ).ready(function() {
 	// Collections page
 	if (top.location.pathname === '/collections') {
 		var currentURL = (document.URL);
-		var part = currentURL.split("/")[1];
+		var part = currentURL.split("/");
 		console.log("Collections : " + part);
 		alert("Collections");
 		
