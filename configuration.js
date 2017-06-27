@@ -170,10 +170,10 @@ $( document ).ready(function() {
 			});
 		
 		alert("done");
+		
+		var size = part.length;
+		console.log("size : " + size);
 	}
-	
-	var size = part.length;
-	console.log("size : " + size);
 	
 // 	if (part.length === 5) {
 // 		alert("yeah");
