@@ -242,6 +242,10 @@ $( document ).ready(function() {
 		var key = part[3];
 		console.log("Key : " + key);
 		
+		if (key == "products") {
+			alert("Products PDP");
+		}
+		
 	}
 	
 // 	if (top.location.pathname === '/products') {
