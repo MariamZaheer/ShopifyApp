@@ -240,7 +240,7 @@ $( document ).ready(function() {
 		console.log(part);
 		
 		var key = part[3];
-		console.log("Key : " + part);
+		console.log("Key : " + key);
 		
 	}
 	
