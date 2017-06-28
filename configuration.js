@@ -233,7 +233,7 @@ $( document ).ready(function() {
 	
 	// Product Page
 	if (top.location.href.indexOf("/products/") > -1) {
-		alert("Inside PDP);
+		alert("Inside PDP");
 		
 		currentURL = (document.URL);
 		var part = currentURL.split("/");
