@@ -199,17 +199,6 @@ $( document ).ready(function() {
 					var id = data[i].id;					
 					console.log("ID : " + id);
 					
-// 					var url = "https://prometheus-asgard.myshopify.com/collections/" + handle + "/products.json";
-// 					console.log("URl : " + url);
-					
-// 					getAllCollections(url, function(err, data) {
-// 							if (err != null) {
-// 								alert('Something went wrong 2 : ' + err);
-// 							} else {
-// 								var count = Object.keys(data).length;
-// 							}
-// 					});
-					
 					console.log("======================================");
 				}
 				
@@ -240,6 +229,16 @@ $( document ).ready(function() {
 					alert("done");
 				}
 			});
+	}
+	
+	// Product Page
+	if (top.location.href.indexOf("/products/") > -1) {
+		alert("Inside PDP);
+		
+		currentURL = (document.URL);
+		var part = currentURL.split("/");
+		console.log(part);
+		
 	}
 	
 // 	if (top.location.pathname === '/products') {
