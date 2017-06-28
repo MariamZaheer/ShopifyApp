@@ -244,6 +244,8 @@ $( document ).ready(function() {
 		
 		if (key == "products") {
 			alert("Products PDP");
+		} else if (key == "collections") {
+			alert("Through Collection PDP");
 		}
 		
 	}
