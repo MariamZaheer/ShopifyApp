@@ -183,7 +183,7 @@ $( document ).ready(function() {
 // 	}
 	
 	// Product page
-	if (top.location.href.indexOf("products") > -1) {
+	if (top.location.href.indexOf("collections") > -1) {
 		alert("product");
 	}
 // 	if (top.location.pathname === '/products') {
