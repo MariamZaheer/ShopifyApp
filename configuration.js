@@ -239,6 +239,9 @@ $( document ).ready(function() {
 		var part = currentURL.split("/");
 		console.log(part);
 		
+		var key = part[3];
+		console.log("Key : " + part);
+		
 	}
 	
 // 	if (top.location.pathname === '/products') {
