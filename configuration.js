@@ -66,7 +66,7 @@ $( document ).ready(function() {
 		}
 	}
 	
-	var getCollection = function(url, callback) {
+	var getAllCollections = function(url, callback) {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', url, true);
 		xhr.responseType = 'json';
@@ -101,7 +101,7 @@ $( document ).ready(function() {
 	}
 		
 	
-	var getJSON = function(url, callback) {
+	var getCollectionsJSON = function(url, callback) {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', url, true);
 		xhr.responseType = 'json';
@@ -130,7 +130,7 @@ $( document ).ready(function() {
 					var url = "https://prometheus-asgard.myshopify.com/collections/" + handle + "/products.json";
 					console.log("URl : " + url);
 					
-					getCollection(url, function(err, data) {
+					getAllCollections(url, function(err, data) {
 							if (err != null) {
 								alert('Something went wrong 2 : ' + err);
 							} else {
@@ -158,7 +158,7 @@ $( document ).ready(function() {
 		console.log("Current Page : " + currentPage);
 		alert("Collections");
 		
-		getJSON('https://prometheus-asgard.myshopify.com/collections.json',
+		getCollectionsJSON('https://prometheus-asgard.myshopify.com/collections.json',
 			function(err, data) {
 				if (err != null) {
 					alert('Something went wrong: ' + err);
@@ -169,6 +169,54 @@ $( document ).ready(function() {
 		
 		alert("done");
 	}
+	
+	var getSpecificCollectionJSON = function(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', url, true);
+		xhr.responseType = 'json';
+		xhr.onload = function() {
+			var status = xhr.status;
+			if (status == 200) {
+				var response = xhr.response;
+				callback(null, response);
+				
+				var key = Object.keys(response);
+				console.log("Key for all collections : " + key);
+				
+// 				var collectionLength = Object.keys(response.collections).length;
+// 				console.log("Length of the collection : " + collectionLength);
+				
+// 				var data = response.collections;
+
+// 				for (var i in data) {
+					
+// 					var title = data[i].title;					
+// 					console.log("Title : " + title);
+					
+// 					var handle = data[i].handle;					
+// 					console.log("Handle : " + handle);
+					
+// 					var url = "https://prometheus-asgard.myshopify.com/collections/" + handle + "/products.json";
+// 					console.log("URl : " + url);
+					
+// 					getAllCollections(url, function(err, data) {
+// 							if (err != null) {
+// 								alert('Something went wrong 2 : ' + err);
+// 							} else {
+// 								var count = Object.keys(data).length;
+// 							}
+// 					});
+					
+// 					console.log("======================================");
+// 				}
+				
+				var response = Object.values(response);
+			} else {
+				callback(status);
+			}
+		};
+		xhr.send();
+	};
 	
 	// Specific collection
 	if (top.location.href.indexOf("/collections/") > -1) {
@@ -181,7 +229,7 @@ $( document ).ready(function() {
 		
 		var url = "https://prometheus-asgard.myshopify.com/collections/" + currentPage + "/products.json";
 
-		getJSON(url, function(err, data) {
+		getSpecificCollectionJSON(url, function(err, data) {
 				if (err != null) {
 					alert('Something went wrong: ' + err);
 				} else {
