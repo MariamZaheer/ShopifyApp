@@ -245,9 +245,9 @@ $( document ).ready(function() {
 		var key = part[3];
 		console.log("Key : " + key);
 		
-		if (key == "products") {
+		if (key == "products" && length == 5) {
 			alert("Products PDP");
-		} else if (key == "collections") {
+		} else if (key == "collections" && length == 7) {
 			alert("Through Collection PDP");
 		}
 		
