@@ -252,26 +252,20 @@ $( document ).ready(function() {
 				
 				var key = Object.keys(response);
 				console.log("Key  : " + key);
-				
-// 				var collectionLength = Object.keys(response.products).length;
-// 				console.log("Length of the collection : " + collectionLength);
-				
+					
 				var data = response.product;
+					
+				var title = data.title;					
+				console.log("Title : " + title);
 
-// 				for (var i in data) {
-					
-					var title = data.title;					
-					console.log("Title : " + title);
-					
-					var handle = data.handle;					
-					console.log("Handle : " + handle);
-					
-					var id = data.id;					
-					console.log("ID : " + id);
-					
-					console.log("======================================");
-// 				}
-				
+				var handle = data.handle;					
+				console.log("Handle : " + handle);
+
+				var id = data.id;					
+				console.log("ID : " + id);
+
+				console.log("======================================");
+
 				var response = Object.values(response);
 			} else {
 				callback(status);
@@ -291,6 +285,7 @@ $( document ).ready(function() {
 		
 		var key = part[3];
 		
+		// Through the catalog.
 		if (key == "products" && length == 5) {
 			alert("Products PDP");
 			
@@ -309,6 +304,7 @@ $( document ).ready(function() {
 				});
 			
 		} else if (key == "collections" && length == 7) {
+			// Through collections.
 			alert("Through Collection PDP");
 			
 			var product = part[6];
@@ -327,19 +323,4 @@ $( document ).ready(function() {
 		}
 		
 	}
-	
-// 	if (top.location.pathname === '/products') {
-// 		alert("Product");
-		
-// 		getJSON('https://prometheus-asgard.myshopify.com/collections.json',
-// 			function(err, data) {
-// 				if (err != null) {
-// 					alert('Something went wrong: ' + err);
-// 				} else {
-// 					var count = Object.keys(data).length;
-// 				}
-// 			});
-		
-// 		alert("done");
-// 	}
 });
