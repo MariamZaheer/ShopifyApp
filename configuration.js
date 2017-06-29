@@ -310,6 +310,20 @@ $( document ).ready(function() {
 			
 		} else if (key == "collections" && length == 7) {
 			alert("Through Collection PDP");
+			
+			var product = part[6];
+			alert("Product is : " + product);
+			console.log("Product is : " + product);
+			
+			var url = "https://prometheus-asgard.myshopify.com/products/" + product + "/products.json";
+
+			getProductJSON(url, function(err, data) {
+					if (err != null) {
+						alert('Something went wrong: ' + err);
+					} else {
+						var count = Object.keys(data).length;
+					}
+				});
 		}
 		
 	}
