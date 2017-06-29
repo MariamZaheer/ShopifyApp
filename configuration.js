@@ -158,6 +158,7 @@ $( document ).ready(function() {
 		var length = part.length;
 		console.log("Length : " + length);
 		
+		// To match the URL and identify the collections page.
 		if (length == 4) {
 			var currentPage = part[3];
 			console.log("Current Page : " + currentPage);
@@ -223,7 +224,8 @@ $( document ).ready(function() {
 		var length = part.length;
 		console.log("Length : " + length);
 		
-		if (length == 4) {
+		// To match the URL and identify the specific collection.
+		if (length == 5) {
 			alert("Inside " + currentPage);
 			
 			var url = "https://prometheus-asgard.myshopify.com/collections/" + currentPage + "/products.json";
