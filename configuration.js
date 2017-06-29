@@ -215,12 +215,11 @@ $( document ).ready(function() {
 	
 	// Specific collection
 	if (top.location.href.indexOf("/collections/") > -1) {
-		alert("Inside Specific Collection");
-		
 		currentURL = (document.URL);
 		var part = currentURL.split("/");
 		var currentPage = part[4];
 		console.log("Current Page : " + currentPage);
+		alert("Inside " + currentPage);
 		
 		var url = "https://prometheus-asgard.myshopify.com/collections/" + currentPage + "/products.json";
 
