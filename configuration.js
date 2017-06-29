@@ -240,6 +240,46 @@ $( document ).ready(function() {
 		}
 	}
 	
+	var getProductJSON = function(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', url, true);
+		xhr.responseType = 'json';
+		xhr.onload = function() {
+			var status = xhr.status;
+			if (status == 200) {
+				var response = xhr.response;
+				callback(null, response);
+				
+				var key = Object.keys(response);
+				console.log("Key  : " + key);
+				
+// 				var collectionLength = Object.keys(response.products).length;
+// 				console.log("Length of the collection : " + collectionLength);
+				
+// 				var data = response.products;
+
+// 				for (var i in data) {
+					
+// 					var title = data[i].title;					
+// 					console.log("Title : " + title);
+					
+// 					var handle = data[i].handle;					
+// 					console.log("Handle : " + handle);
+					
+// 					var id = data[i].id;					
+// 					console.log("ID : " + id);
+					
+// 					console.log("======================================");
+// 				}
+				
+				var response = Object.values(response);
+			} else {
+				callback(status);
+			}
+		};
+		xhr.send();
+	};
+	
 	// Product Page
 	if (top.location.href.indexOf("/products/") > -1) {		
 		currentURL = (document.URL);
@@ -257,6 +297,17 @@ $( document ).ready(function() {
 			
 			var product = part[4];
 			alert("Product is : " + product);
+			alert("Product is : " + product);
+			
+			var url = "https://prometheus-asgard.myshopify.com/products/" + product + "/products.json";
+
+			getProductJSON(url, function(err, data) {
+					if (err != null) {
+						alert('Something went wrong: ' + err);
+					} else {
+						var count = Object.keys(data).length;
+					}
+				});
 			
 		} else if (key == "collections" && length == 7) {
 			alert("Through Collection PDP");
