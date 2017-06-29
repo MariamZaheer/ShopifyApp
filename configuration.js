@@ -158,12 +158,12 @@ $( document ).ready(function() {
 		var length = part.length;
 		console.log("Length : " + length);
 		
-		var currentPage = part[3];
-		console.log("Current Page : " + currentPage);
-		alert("Collections");
-		
-		getCollectionsJSON('https://prometheus-asgard.myshopify.com/collections.json',
-			function(err, data) {
+		if (length == 4) {
+			var currentPage = part[3];
+			console.log("Current Page : " + currentPage);
+			alert("Collections");
+			
+			getCollectionsJSON('https://prometheus-asgard.myshopify.com/collections.json', function(err, data) {
 				if (err != null) {
 					alert('Something went wrong: ' + err);
 				} else {
@@ -172,6 +172,7 @@ $( document ).ready(function() {
 			});
 		
 		alert("done");
+		}
 	}
 	
 	var getSpecificCollectionJSON = function(url, callback) {
