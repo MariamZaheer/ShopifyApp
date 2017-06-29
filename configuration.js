@@ -256,21 +256,21 @@ $( document ).ready(function() {
 // 				var collectionLength = Object.keys(response.products).length;
 // 				console.log("Length of the collection : " + collectionLength);
 				
-// 				var data = response.products;
+				var data = response.products;
 
-// 				for (var i in data) {
+				for (var i in data) {
 					
-// 					var title = data[i].title;					
-// 					console.log("Title : " + title);
+					var title = data[i].title;					
+					console.log("Title : " + title);
 					
-// 					var handle = data[i].handle;					
-// 					console.log("Handle : " + handle);
+					var handle = data[i].handle;					
+					console.log("Handle : " + handle);
 					
-// 					var id = data[i].id;					
-// 					console.log("ID : " + id);
+					var id = data[i].id;					
+					console.log("ID : " + id);
 					
-// 					console.log("======================================");
-// 				}
+					console.log("======================================");
+				}
 				
 				var response = Object.values(response);
 			} else {
@@ -297,7 +297,7 @@ $( document ).ready(function() {
 			
 			var product = part[4];
 			alert("Product is : " + product);
-			alert("Product is : " + product);
+			console.log("Product is : " + product);
 			
 			var url = "https://prometheus-asgard.myshopify.com/products/" + product + "/products.json";
 
