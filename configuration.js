@@ -258,7 +258,7 @@ $( document ).ready(function() {
 				
 				var data = response.products;
 
-				for (var i in data) {
+// 				for (var i in data) {
 					
 					var title = data[i].title;					
 					console.log("Title : " + title);
@@ -270,7 +270,7 @@ $( document ).ready(function() {
 					console.log("ID : " + id);
 					
 					console.log("======================================");
-				}
+// 				}
 				
 				var response = Object.values(response);
 			} else {
