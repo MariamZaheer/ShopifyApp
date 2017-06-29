@@ -154,6 +154,10 @@ $( document ).ready(function() {
 		currentURL = (document.URL);
 		var part = currentURL.split("/");
 		console.log("Current Page 1: " + part);
+		
+		var length = part.length;
+		console.log("Length : " + length);
+		
 		var currentPage = part[3];
 		console.log("Current Page : " + currentPage);
 		alert("Collections");
