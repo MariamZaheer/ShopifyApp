@@ -238,6 +238,7 @@ $( document ).ready(function() {
 		currentURL = (document.URL);
 		var part = currentURL.split("/");
 		console.log(part);
+		
 		var length = part.length;
 		console.log("Length : " + length);
 		
