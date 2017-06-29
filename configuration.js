@@ -260,13 +260,13 @@ $( document ).ready(function() {
 
 // 				for (var i in data) {
 					
-					var title = data[i].title;					
+					var title = data.title;					
 					console.log("Title : " + title);
 					
-					var handle = data[i].handle;					
+					var handle = data.handle;					
 					console.log("Handle : " + handle);
 					
-					var id = data[i].id;					
+					var id = data.id;					
 					console.log("ID : " + id);
 					
 					console.log("======================================");
