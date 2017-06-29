@@ -254,6 +254,10 @@ $( document ).ready(function() {
 		
 		if (key == "products" && length == 5) {
 			alert("Products PDP");
+			
+			var product = part[4];
+			alert("Product is : " + product);
+			
 		} else if (key == "collections" && length == 7) {
 			alert("Through Collection PDP");
 		}
