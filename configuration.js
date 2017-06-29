@@ -170,8 +170,6 @@ $( document ).ready(function() {
 					var count = Object.keys(data).length;
 				}
 			});
-		
-		alert("done");
 		}
 	}
 	
@@ -231,7 +229,6 @@ $( document ).ready(function() {
 					alert('Something went wrong: ' + err);
 				} else {
 					var count = Object.keys(data).length;
-					alert("done");
 				}
 			});
 	}
