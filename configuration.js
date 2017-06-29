@@ -256,7 +256,7 @@ $( document ).ready(function() {
 // 				var collectionLength = Object.keys(response.products).length;
 // 				console.log("Length of the collection : " + collectionLength);
 				
-				var data = response.products;
+				var data = response.product;
 
 // 				for (var i in data) {
 					
@@ -290,7 +290,6 @@ $( document ).ready(function() {
 		console.log("Length : " + length);
 		
 		var key = part[3];
-		console.log("Key : " + key);
 		
 		if (key == "products" && length == 5) {
 			alert("Products PDP");
