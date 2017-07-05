@@ -64,35 +64,6 @@
 			console.log(json);
 		}
 		
-		function getCart() {
-			
-			
-// 			var queryString = $("script[src*='sync.js']").attr('src').split('?')[1];
-// 			console.log("sync page " + queryString);
-
-// 	var variables = queryString.split("&");
-// 	console.log(variables);
-	
-// 	var planVariables = variables[0];
-// 	console.log(planVariables);
-	
-// 	var planType = planVariables.split("=");
-// 	console.log(planType);
-// 	var plan = planType[1];
-// 	console.log(plan);
-			
-// 			var xhttp = new XMLHttpRequest();
-// 			xhttp.onreadystatechange = function() {
-// 				if (this.readyState == 4 && this.status == 200) {
-// 					document.getElementById("demo").innerHTML = this.responseText;
-// 				}
-// 			};
-			
-// 			xhttp.open("GET", "https://prometheus-asgard.myshopify.com/cart.json", true);
-// 			xhttp.send();
-			
-		}
-		
 		function createCORSRequest(method, url) {
 			alert('inside createCORSRequest');
 			var xhr = new XMLHttpRequest();
@@ -116,17 +87,6 @@
 				alert('CORS not supported');
 				return;
 			}
-			
-// 			xhr.onreadystatechange = function (oEvent) {
-// 				alert('inside onready');
-// 				if (xhr.readyState === 4) {  
-// 					if (xhr.status === 200) { 
-// 						console.log(xhr.responseText) 
-// 					} else {
-// 						console.log("Error", xhr.statusText);
-// 					}
-// 				}
-// 			}; 
 			
 			// Response handlers.
 			xhr.onload = function() {
