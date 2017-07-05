@@ -164,7 +164,7 @@ $( document ).ready(function() {
 			console.log("Current Page : " + currentPage);
 			alert("Collections");
 			
-			getCollectionsJSON('https://prometheus-asgard.myshopify.com/collections.json', function(err, data) {
+			getCollectionsJSON('https://prometheus-asgard.myshopify.com/' + currentPage + 'collections.json', function(err, data) {
 				if (err != null) {
 					alert('Something went wrong: ' + err);
 				} else {
